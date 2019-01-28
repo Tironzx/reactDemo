@@ -1,0 +1,22 @@
+.page-title {
+    display: flex;
+    align-items: center;
+}
+.page-title::before {
+    display: inline-block;
+    content: "";
+    width: 7px;
+    height: 20px;
+    background-color: #409eff;
+    margin-right: 10px; 
+}
+
+.search-switch {
+    display: flex;
+    align-items: center;
+}
+.search-switch>li {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}

@@ -1,0 +1,74 @@
+
+.lside {
+    color: #bfcbd9;
+}
+.lside-list-title {
+    position: relative;
+    height: 56px;
+    border-bottom: 1px solid #324157;
+    padding-left: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.lside-list-title:hover {
+    background-color: #283446;
+}
+.lside-list-title>img {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+
+.item-menu {
+    background-color: #324157;
+}
+.item-menu>li {
+    height: 56px;
+    line-height: 56px;
+}
+.item-menu>li:hover {
+    color: #1e9fff;
+    background-color: #283446;
+}
+.select-down {
+    position: absolute;
+    right: 15px;
+    top: 24px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url('../images/up.png') no-repeat center center;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    z-index: 5;
+}
+.select-up {
+    position: absolute;
+    right: 15px;
+    top: 24px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url('../images/up.png') no-repeat center center;
+    transform: rotate(180deg);
+    transition: all 0.2s;
+    z-index: 5;
+}
+
+.default-style {
+    display: block;
+    width: 240px;
+    height: 56px;
+    line-height: 56px;
+    padding-left: 72px;
+    box-sizing: border-box;
+    color: #BFCBD9;
+    text-decoration: none;
+}
+.default-style:hover {
+    color: #1E9FFF;
+}

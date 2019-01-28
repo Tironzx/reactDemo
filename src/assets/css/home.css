@@ -1,0 +1,110 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    height: 120px;
+    color: #fff;
+    background-color: #242f42;
+    display: flex;
+}
+.logo {
+    width: 240px;
+    border-right: 1px solid #aaa;
+    text-align: center;
+    box-sizing: border-box;
+}
+.logo>img {
+    height: 120px;
+}
+.header-title {
+    flex: 1;
+    position: relative;
+}
+.header-title>h3 {
+    font-size: 24px;
+    line-height: 120px;
+    padding-left: 10px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.header-user {
+    position: absolute;
+    right: 25px;
+    font-size: 14px;
+    z-index: 100;
+    top: 50px;
+}
+.header-user>p {
+    height: 30px;
+    line-height: 30px;
+    padding-right: 22px;
+    position: relative;
+    cursor: pointer;
+}
+.header-user>p:after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 6px solid #fff;
+    border-top-width: 7px;
+    border-bottom-width: 8px;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: 11px;
+    right: 0;
+}
+.header-user>ul {
+    position: absolute;
+    right: 0;
+    width: 84px;
+    color: #666;
+    border: 1px solid #ebeef5;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 10px 0;
+}
+.header-user>ul:before {
+    display: inline-block;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 8px solid #ffff;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: -16px;
+    right: 24px;
+}
+.header-user>ul>li {
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+    cursor: pointer;
+}
+.header-user>ul>li:hover {
+    color: #66b1ff;
+    background-color: #ecf5ff;
+}
+
+/*主体内容*/
+.container {
+    flex: 1;
+    display: flex;
+}
+.left {
+    width: 240px;
+    height: 100%;
+    background-color: #324157;
+}
+.right {
+    flex: 1;
+    padding: 30px 10px 10px 20px;
+    overflow: auto;
+    box-sizing: border-box;
+}
