@@ -5,13 +5,13 @@ import Axios from 'axios';
 
 
 const $url = {
-    bak_api:'http://admin-api-release.ddvipgo.com', //接口地址
-    img_upload:'http://admin-api-release.ddvipgo.com/file/upload' //图片上传地址
+    bak_api:'', //接口地址
+    img_upload:'' //图片上传地址
 }
 const $http = function (params) {
     //请求拦截器
     Axios.interceptors.request.use(function(config){
-        if(config.url !== 'http://admin-api-release.ddvipgo.com/user/login'){
+        if(config.url !== 'url'){
             config.headers['Administrator-Access-Token'] = window.sessionStorage.getItem('token');
         }
         // config.headers['Content-Type'] = "application/json";
@@ -26,7 +26,7 @@ const $http = function (params) {
         if(response.data.code ==='10006'){ //异常错误,退出重新登录
             params._this.props.history.push('/')
         }
-        if(response.request.responseURL ==='http://admin-api-release.ddvipgo.com/user/login'){ //登录回调需要保存token
+        if(response.request.responseURL ==='url'){ //登录回调需要保存token
             window.sessionStorage.setItem('token',response.headers['administrator-access-token']);
         }
         return response;
