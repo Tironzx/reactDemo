@@ -12,11 +12,7 @@ class GoodsManger extends Component{
         super();
 
         this.state = {
-            lists:[],
-            editStyle:{
-                color:'#0a80da',
-                cursor:'pointer'
-            }
+            lists:[]
         }
     }
     componentDidMount(){

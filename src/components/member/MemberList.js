@@ -37,7 +37,7 @@ class MemberList extends Component{
             url:$url.bak_api,
             api:'/users',
             success:function(data){
-                console.log(data)
+                // console.log(data)
                 _this.setState({
                     lists : data.user_list
                 })

@@ -5,8 +5,8 @@ import Axios from 'axios';
 
 
 const $url = {
-    bak_api:'', //接口地址
-    img_upload:'' //图片上传地址
+    bak_api:'url', //接口地址
+    img_upload:'url' //图片上传地址
 }
 const $http = function (params) {
     //请求拦截器
